@@ -34,3 +34,5 @@ Below are sample predictions produced by our final model. (Code to produce such 
 <img width="984" alt="Screenshot 2024-12-14 at 10 08 11 PM" src="https://github.com/user-attachments/assets/eccff595-7be2-4d0b-ae57-30af99c9bcb7" />
 
 Given more time and computing resources, we would like to further explore how performance of the combined model can be improved by unlocking the later layers of the pretrained models for finetuning. Another promising approach would be to use these hybrid models to apply pseudolabels to an unlabeled dataset for student-teacher learning. Vision Transformers are an inherently data hungry architecture, so more data would likely greatly improve performance, especially in the case of training from scratch.
+
+Code to produce all visuals can be found in `CODE.ipynb`
