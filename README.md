@@ -20,9 +20,15 @@ Next we used ResNet50 as a feature exactor to pass values to our untrained ViT. 
 
 <img width="300" alt="AGV_vUczCidwzkSzsXZ2Wlofyo3ITEgA5-nCWdPBPNnvb0j2GwZrdMuWJR3yQ13wI4JA-Ylbo5echRkHRsXvywDCcVvbJf-vibStAhbToc2HxjGT5A2ckFP7br9l3hlRLwLK_2CHqtDY0w=s2048" src="https://github.com/user-attachments/assets/c949e784-dafc-4f4c-8a78-77e714a79f86" />
 
-Finally we ran the two pretrained models in parallel, frozen like before, but with an attention mechanism before the linear layer to attend to the outputs and weight them. The results of this model are below:
+Finally we ran the two pretrained models in parallel, frozen like before, but with a multi-head attention mechanism before the linear layer to attend to the outputs and weight them. The results of this model are below:
 
-<img width="300" alt="AGV_vUf7U-VsuXAAXvxZiLKDHzOslKs4jRVhsnmyNOb_0gAvZ5a2UWL3VaiF5nHYjtmT3hiihI_uZgZACKZI8AULwP4d_3inVlfqzLTT6FKG3n3JjzWWIy-VYzvfc6xDKcFAuTprr3IqsQ=s2048" src="https://github.com/user-attachments/assets/6ac49b02-2a47-4d2a-82a0-9b6848ff0953" />
+<img width="250" alt="PNG image" src="https://github.com/user-attachments/assets/2f391f7e-399b-4f0e-9bb2-fdffa8ce45ff" />
+<img width="250" alt="PNG image" src="https://github.com/user-attachments/assets/088501dd-024c-4f39-9546-fcdd09c6e96d" />
+
+We used four heads because it had the highest accuracy, but one head likely could have reduced the complexity of the model at little cost to accuracy:
+
+<img width="300" alt="PNG image" src="https://github.com/user-attachments/assets/d9a9b4f1-2ca4-4efc-a220-58aac9518a82" />
+
 
 Below are sample predictions produced by our final model. (Code to produce such results can be found at the end of the notebook)
 <img width="984" alt="Screenshot 2024-12-14 at 10 08 11 PM" src="https://github.com/user-attachments/assets/eccff595-7be2-4d0b-ae57-30af99c9bcb7" />
